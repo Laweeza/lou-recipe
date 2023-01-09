@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { ChakraProvider, theme } from '@chakra-ui/react';
 
-import { RecipeListProps } from './components/RecipeDisplay/Recipe.types';
-import RecipeList from './components/RecipeDisplay/RecipeList';
+import { RecipeListProps } from './components/Recipe/Recipe.types';
+import RecipeList from './components/Recipe/RecipeList';
 import Layout from './components/Layout';
 
 const recipesList: RecipeListProps = {
