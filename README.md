@@ -1,6 +1,10 @@
 This project was bootstrapped with
 [Create React App](https://github.com/facebook/create-react-app).
 
+yarn create react-app my-app --template @chakra-ui/typescript
+
+https://github.com/chakra-ui/chakra-ui/
+
 ## Available Scripts
 
 In the project directory, you can run:
