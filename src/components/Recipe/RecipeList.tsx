@@ -6,7 +6,7 @@ import RecipeItem from './RecipeItem';
 
 const RecipeList = ({ recipes }: RecipeListProps) => {
   return (
-    <Flex gap={8} px={8}>
+    <Flex gap={8} px={8} flexWrap={'wrap'}>
       {recipes?.length &&
         recipes.map(({ id, title, category, ingredients, directions, imageUrl }) => (
           <RecipeItem
