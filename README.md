@@ -1,6 +1,4 @@
-## Available Scripts
-
-Toodalou's Recipes
+## Toodalou's Recipes
 
 ### `Purpose`
 
