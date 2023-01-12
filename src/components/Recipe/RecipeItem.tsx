@@ -1,25 +1,16 @@
-import {
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-  Box,
-} from '@chakra-ui/react';
+import { Box, Card, CardBody, CardHeader, Heading } from '@chakra-ui/react';
 
 import { RecipeProps } from './Recipe.types';
 
 const RecipeItem = ({ id, title, category, directions, ingredients, imageUrl }: RecipeProps) => (
-  <AccordionItem>
+  <Card shadow='md' bg={'white'}>
     <h2>
-      <AccordionButton>
-        <Box as='span' flex='1' textAlign='left'>
-          {title}
-        </Box>
-        <AccordionIcon />
-      </AccordionButton>
+      <CardHeader>
+        <Heading size='md'>{title}</Heading>
+      </CardHeader>
     </h2>
-    <AccordionPanel pb={4}>{directions}</AccordionPanel>
-  </AccordionItem>
+    <CardBody>{directions}</CardBody>
+  </Card>
 );
 
 export default RecipeItem;

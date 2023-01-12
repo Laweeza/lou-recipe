@@ -1,11 +1,12 @@
-import { Accordion } from '@chakra-ui/react';
+import { Accordion, Flex } from '@chakra-ui/react';
+import { Card } from '@chakra-ui/react';
 
 import { RecipeListProps } from './Recipe.types';
 import RecipeItem from './RecipeItem';
 
 const RecipeList = ({ recipes }: RecipeListProps) => {
   return (
-    <Accordion defaultIndex={[0]} allowMultiple w='100%'>
+    <Flex gap={8} px={8}>
       {recipes?.length &&
         recipes.map(({ id, title, category, ingredients, directions, imageUrl }) => (
           <RecipeItem
@@ -17,7 +18,7 @@ const RecipeList = ({ recipes }: RecipeListProps) => {
             imageUrl={imageUrl}
           />
         ))}
-    </Accordion>
+    </Flex>
   );
 };
 
