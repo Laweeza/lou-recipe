@@ -14,6 +14,7 @@ const recipesList: RecipeListProps = {
         id: 1,
         name: 'Dessert',
       },
+      description: 'A simple sweet treat!',
       directions: [
         'Throw in wet ingredients, followed by dry ingredients into a blender. Blend! This can be consumed immediately. Keeps in the fridge for up to 3 days in a seal tight container.',
       ],
@@ -32,9 +33,10 @@ const recipesList: RecipeListProps = {
       ],
       imageUrl: '',
       nutrition: {
-        serving: '524 g',
-        calories: '380',
-        protein: '48 g',
+        serving: 524,
+        calories: 380,
+        fat: 0,
+        protein: 48,
       },
     },
     {
@@ -44,6 +46,7 @@ const recipesList: RecipeListProps = {
         id: 1,
         name: 'Dessert',
       },
+      description: 'A simple sweet treat!',
       directions: [
         'Throw in wet ingredients, followed by dry ingredients into a blender. Blend! This can be consumed immediately. Keeps in the fridge for up to 3 days in a seal tight container.',
       ],
@@ -62,9 +65,10 @@ const recipesList: RecipeListProps = {
       ],
       imageUrl: '',
       nutrition: {
-        serving: '524 g',
-        calories: '380',
-        protein: '48 g',
+        serving: 524,
+        calories: 380,
+        fat: 0,
+        protein: 48,
       },
     },
     {
@@ -74,6 +78,7 @@ const recipesList: RecipeListProps = {
         id: 1,
         name: 'Dessert',
       },
+      description: 'A simple sweet treat!',
       directions: [
         'Throw in wet ingredients, followed by dry ingredients into a blender. Blend! This can be consumed immediately. Keeps in the fridge for up to 3 days in a seal tight container.',
       ],
@@ -92,9 +97,10 @@ const recipesList: RecipeListProps = {
       ],
       imageUrl: '',
       nutrition: {
-        serving: '524 g',
-        calories: '380',
-        protein: '48 g',
+        serving: 524,
+        calories: 380,
+        fat: 0,
+        protein: 48,
       },
     },
   ],

@@ -8,16 +8,20 @@ const RecipeList = ({ recipes }: RecipeListProps) => {
   return (
     <Flex gap={8} px={8} flexWrap={'wrap'}>
       {recipes?.length &&
-        recipes.map(({ id, title, category, ingredients, directions, imageUrl }) => (
-          <RecipeItem
-            id={id}
-            title={title}
-            category={category}
-            ingredients={ingredients}
-            directions={directions}
-            imageUrl={imageUrl}
-          />
-        ))}
+        recipes.map(
+          ({ id, title, category, ingredients, description, directions, nutrition, imageUrl }) => (
+            <RecipeItem
+              id={id}
+              title={title}
+              category={category}
+              ingredients={ingredients}
+              description={description}
+              directions={directions}
+              imageUrl={imageUrl}
+              nutrition={nutrition}
+            />
+          ),
+        )}
     </Flex>
   );
 };

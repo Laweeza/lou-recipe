@@ -8,6 +8,7 @@ export interface RecipeProps {
   title: string;
   category?: ICategory;
   ingredients: IngredientProps[];
+  description: string;
   directions: string[];
   imageUrl?: string;
   nutrition?: INutrition;
@@ -23,7 +24,8 @@ export interface ICategory {
 }
 
 export interface INutrition {
-  serving: string;
-  calories: string;
-  protein: string;
+  serving: number;
+  calories: number;
+  fat?: number;
+  protein: number;
 }
