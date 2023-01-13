@@ -1,11 +1,13 @@
 import { useState } from 'react';
-import { Routes } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ChakraProvider, theme } from '@chakra-ui/react';
 
 import { RecipeListProps } from './components/Recipe/Recipe.types';
 import { CategoryTabs } from './components/Categories/Tabs';
 import RecipeList from './components/Recipe/RecipeList';
 import Layout from './components/Layout';
+import Root from './routes';
+import ErrorPage from './pages/ErrorPage';
 
 // allow adding of recipes with different units
 // route to categories
@@ -119,10 +121,19 @@ const recipesList: RecipeListProps = {
   ],
 };
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />,
+    errorElement: <ErrorPage />,
+  },
+]);
+
 export const App = () => {
   return (
     <ChakraProvider theme={theme}>
       <Layout>
+        <RouterProvider router={router} />
         <CategoryTabs />
         <RecipeList recipes={recipesList.recipes} />
       </Layout>
