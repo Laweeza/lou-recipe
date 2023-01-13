@@ -37,7 +37,6 @@ const RecipeItem = ({
               <Text size='sm'>{title}</Text>
             </LinkOverlay>
           </Heading>
-          {/* <Text mb='3'>{description}</Text> */}
           <Text>Total: {nutrition?.serving} g</Text>
           <Text>Calories: {nutrition?.calories} kcal</Text>
           <Text> Fat: {nutrition?.fat || 0} g</Text>

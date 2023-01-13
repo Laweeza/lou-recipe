@@ -11,6 +11,7 @@ const RecipeList = ({ recipes }: RecipeListProps) => {
         recipes.map(
           ({ id, title, category, ingredients, description, directions, nutrition, imageUrl }) => (
             <RecipeItem
+              key={id}
               id={id}
               title={title}
               category={category}
