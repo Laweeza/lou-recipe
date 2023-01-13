@@ -31,7 +31,7 @@ const recipesList: RecipeListProps = {
         },
         { quantity: '1/2 - 1/3 tsp', name: 'Guar Gum' },
       ],
-      imageUrl: '',
+      imageUrl: './pudding.png',
       nutrition: {
         serving: 524,
         calories: 380,
@@ -41,12 +41,12 @@ const recipesList: RecipeListProps = {
     },
     {
       id: 2,
-      title: 'Protein Pudding',
+      title: 'Protein Naan',
       category: {
         id: 1,
-        name: 'Dessert',
+        name: 'Entree',
       },
-      description: 'A simple sweet treat!',
+      description: 'Have this as a side to your tandoori chicken.',
       directions: [
         'Throw in wet ingredients, followed by dry ingredients into a blender. Blend! This can be consumed immediately. Keeps in the fridge for up to 3 days in a seal tight container.',
       ],
@@ -63,17 +63,17 @@ const recipesList: RecipeListProps = {
         },
         { quantity: '1/2 - 1/3 tsp', name: 'Guar Gum' },
       ],
-      imageUrl: '',
+      imageUrl: './naan.png',
       nutrition: {
-        serving: 524,
-        calories: 380,
+        serving: 1,
+        calories: 190,
         fat: 0,
-        protein: 48,
+        protein: 10,
       },
     },
     {
       id: 3,
-      title: 'Protein Pudding',
+      title: 'Chicken',
       category: {
         id: 1,
         name: 'Dessert',
@@ -95,7 +95,7 @@ const recipesList: RecipeListProps = {
         },
         { quantity: '1/2 - 1/3 tsp', name: 'Guar Gum' },
       ],
-      imageUrl: '',
+      imageUrl: './chicken.png',
       nutrition: {
         serving: 524,
         calories: 380,

@@ -30,8 +30,8 @@ const RecipeItem = ({
     <LinkBox>
       <CardBody>
         <Flex gap={2} flexDir={'column'}>
-          {/* <Image src='' alt='' borderRadius='lg' /> */}
-          <Skeleton h={'240px'} />
+          <Image src={imageUrl} alt={title} borderRadius='lg' />
+          {/* <Skeleton h={'240px'} /> */}
           <Heading size='md' onClick={() => alert('clicked')} cursor={'pointer'}>
             <LinkOverlay>
               <Text size='sm'>{title}</Text>
