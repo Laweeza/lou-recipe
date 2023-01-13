@@ -40,6 +40,8 @@ const RecipeItem = ({
           {/* <Text mb='3'>{description}</Text> */}
           <Text>Total: {nutrition?.serving} g</Text>
           <Text>Calories: {nutrition?.calories} kcal</Text>
+          <Text> Fat: {nutrition?.fat || 0} g</Text>
+          <Text>Carbs: {nutrition?.carbs || 0} g</Text>
           <Text>Protein: {nutrition?.protein} g</Text>
         </Flex>
       </CardBody>
