@@ -1,11 +1,11 @@
-import { BrowserRouter, Link } from 'react-router-dom';
-import { Tab, Tabs, TabList } from '@chakra-ui/react';
+import { Tab, TabList, Tabs } from '@chakra-ui/react';
+import { Link, Outlet } from 'react-router-dom';
 
 export const CategoryTabs = () => {
   return (
-    <Tabs>
-      <TabList>
-        <BrowserRouter>
+    <>
+      <Tabs>
+        <TabList>
           <Tab as={Link} to='/entrees'>
             Entrees
           </Tab>
@@ -18,8 +18,9 @@ export const CategoryTabs = () => {
           <Tab as={Link} to='/snacks'>
             Snacks
           </Tab>
-        </BrowserRouter>
-      </TabList>
-    </Tabs>
+        </TabList>
+      </Tabs>
+      <Outlet />
+    </>
   );
 };

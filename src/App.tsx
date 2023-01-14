@@ -1,5 +1,5 @@
 import { ChakraProvider, theme } from '@chakra-ui/react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 
 import { CategoryTabs } from './components/Categories/Tabs';
 import Layout from './components/Layout';
@@ -123,9 +123,13 @@ const recipesList: RecipeListProps = {
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Dashboard />,
+    element: <CategoryTabs />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        index: true,
+        element: <RecipeList recipes={recipesList.recipes} />,
+      },
       {
         path: '/entrees',
         element: <Entrees />,
@@ -151,8 +155,6 @@ export const App = () => {
     <ChakraProvider theme={theme}>
       <Layout>
         <RouterProvider router={router} />
-        <CategoryTabs />
-        <RecipeList recipes={recipesList.recipes} />
       </Layout>
     </ChakraProvider>
   );
