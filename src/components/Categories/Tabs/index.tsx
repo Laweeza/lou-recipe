@@ -1,5 +1,5 @@
-import { BrowserRouter, Link, Router } from 'react-router-dom';
-import { Tab, Tabs, TabList, TabPanel, TabPanels } from '@chakra-ui/react';
+import { BrowserRouter, Link } from 'react-router-dom';
+import { Tab, Tabs, TabList } from '@chakra-ui/react';
 
 export const CategoryTabs = () => {
   return (
