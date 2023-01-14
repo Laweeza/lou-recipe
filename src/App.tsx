@@ -1,21 +1,16 @@
-import { useState } from 'react';
-import { createBrowserRouter, RouterProvider, useOutletContext } from 'react-router-dom';
 import { ChakraProvider, theme } from '@chakra-ui/react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import { RecipeListProps } from './components/Recipe/Recipe.types';
 import { CategoryTabs } from './components/Categories/Tabs';
-import RecipeList from './components/Recipe/RecipeList';
 import Layout from './components/Layout';
-import ErrorPage from './pages/ErrorPage';
+import { RecipeListProps } from './components/Recipe/Recipe.types';
+import RecipeList from './components/Recipe/RecipeList';
 import Dashboard from './pages/Dashboard';
-import Entrees from './pages/Entrees';
-import Sides from './pages/Sides';
 import Desserts from './pages/Desserts';
+import Entrees from './pages/Entrees';
+import ErrorPage from './pages/ErrorPage';
+import Sides from './pages/Sides';
 import Snacks from './pages/Snacks';
-
-// allow adding of recipes with different units
-// route to categories
-// pictures? :/
 
 const recipesList: RecipeListProps = {
   recipes: [

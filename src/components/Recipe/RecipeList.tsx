@@ -1,5 +1,4 @@
-import { Accordion, Flex } from '@chakra-ui/react';
-import { Card } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
 import { RecipeListProps } from './Recipe.types';
 import RecipeItem from './RecipeItem';

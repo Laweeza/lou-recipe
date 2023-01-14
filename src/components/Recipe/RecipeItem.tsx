@@ -1,18 +1,4 @@
-import {
-  Box,
-  Card,
-  CardBody,
-  CardHeader,
-  Divider,
-  Flex,
-  Heading,
-  Image,
-  Link,
-  LinkBox,
-  LinkOverlay,
-  Skeleton,
-  Text,
-} from '@chakra-ui/react';
+import { Card, CardBody, Flex, Heading, Image, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
 
 import { RecipeProps } from './Recipe.types';
 
