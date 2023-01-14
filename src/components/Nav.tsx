@@ -1,22 +1,25 @@
 import { Tab, TabList, Tabs } from '@chakra-ui/react';
 import { Link, Outlet } from 'react-router-dom';
+import '../i18n';
+import { useTranslation } from 'react-i18next';
 
-export const CategoryTabs = () => {
+const CategoryNav = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Tabs>
         <TabList>
           <Tab as={Link} to='/entrees'>
-            Entrees
+            {t('Entrees')}
           </Tab>
           <Tab as={Link} to='/sides'>
-            Sides
+            {t('Sides')}
           </Tab>
           <Tab as={Link} to='/desserts'>
-            Desserts
+            {t('Desserts')}
           </Tab>
           <Tab as={Link} to='/snacks'>
-            Snacks
+            {t('Snacks')}
           </Tab>
         </TabList>
       </Tabs>
@@ -24,3 +27,5 @@ export const CategoryTabs = () => {
     </>
   );
 };
+
+export default CategoryNav;
