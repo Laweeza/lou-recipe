@@ -1,6 +1,10 @@
 import {
   Button,
+  Flex,
+  FormControl,
+  FormLabel,
   Icon,
+  Input,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -8,7 +12,11 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
+  Textarea,
   useDisclosure,
+  VStack,
+  Text,
+  IconButton,
 } from '@chakra-ui/react';
 import React from 'react';
 import { MdAdd } from 'react-icons/md';
@@ -26,12 +34,45 @@ export const AddRecipe = () => {
         Add Recipe
       </Button>
 
-      <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose} size={'xl'}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
+          <ModalHeader> Add Recipe</ModalHeader>
           <ModalCloseButton />
-          <ModalBody>Add Recipe</ModalBody>
+          <ModalBody>
+            <VStack align='start'>
+              <FormControl>
+                <FormLabel>Title</FormLabel>
+                <Input placeholder='Enter recipe title' />
+              </FormControl>
+              <FormControl>
+                <FormLabel>Description</FormLabel>
+                <Textarea placeholder='Enter description ' />
+              </FormControl>
+
+              <Text>Ingredients</Text>
+              <Flex gap={3} align='center'>
+                <IconButton icon={<Icon as={MdAdd} />} aria-label={''} size={'sm'} />
+                <FormControl>
+                  <Input placeholder='quantity' size='sm' />
+                </FormControl>
+                <FormControl>
+                  <Input placeholder='name' size='sm' />
+                </FormControl>
+              </Flex>
+
+              <Text>Directions</Text>
+              <Flex gap={3} align='center'>
+                <IconButton icon={<Icon as={MdAdd} />} aria-label={''} size={'sm'} />
+                <FormControl>
+                  <Input placeholder='order' size='sm' />
+                </FormControl>
+                <FormControl>
+                  <Input placeholder='instructions' size='sm' />
+                </FormControl>
+              </Flex>
+            </VStack>
+          </ModalBody>
 
           <ModalFooter>
             <Button colorScheme='twitter' mr={3} onClick={onClose}>
