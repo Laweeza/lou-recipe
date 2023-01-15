@@ -1,9 +1,9 @@
 import { Flex } from '@chakra-ui/react';
 
-import { RecipeListProps } from './Recipe.types';
+import { RecipeProps } from './Recipe.types';
 import RecipeItem from './RecipeItem';
 
-const RecipeList = ({ recipes }: RecipeListProps) => {
+const RecipeList = ({ recipes }: { recipes: RecipeProps[] }) => {
   return (
     <Flex gap={8} px={8} flexWrap={'wrap'}>
       {recipes?.length &&
