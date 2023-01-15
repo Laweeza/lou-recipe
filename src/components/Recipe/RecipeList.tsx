@@ -1,4 +1,5 @@
 import { Flex } from '@chakra-ui/react';
+import Layout from '../Layout';
 
 import { RecipeProps } from './Recipe.types';
 import RecipeItem from './RecipeItem';
@@ -26,4 +27,12 @@ const RecipeList = ({ recipes }: { recipes: RecipeProps[] }) => {
   );
 };
 
-export default RecipeList;
+const RecipesPage = ({ recipes }: { recipes: RecipeProps[] }) => {
+  return (
+    <Layout>
+      <RecipeList recipes={recipes} />
+    </Layout>
+  );
+};
+
+export default RecipesPage;

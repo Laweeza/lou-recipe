@@ -10,7 +10,15 @@ const recipesList: RecipeProps[] = [
     },
     description: 'A simple sweet treat!',
     directions: [
-      'Throw in wet ingredients, followed by dry ingredients into a blender. Blend! This can be consumed immediately. Keeps in the fridge for up to 3 days in a seal tight container.',
+      {
+        order: 1,
+        instruction: 'Throw in wet ingredients, followed by dry ingredients into a blender. Blend!',
+      },
+      {
+        order: 2,
+        instruction:
+          'This can be consumed immediately. Keeps in the fridge for up to 3 days in a seal tight container.',
+      },
     ],
     ingredients: [
       { quantity: '1 1/2 cups', name: 'Fairlife Milk' },
@@ -42,13 +50,37 @@ const recipesList: RecipeProps[] = [
     },
     description: 'Have this as a side to your tandoori chicken.',
     directions: [
-      'Add all your ingredients to a large bowl and mix it together until it forms a dough ball.',
-      'Break the dough into 6 smaller pieces and lightly knead them in your hands to smooth out.',
-      'Add to a floured surface and use your hands to flatten each naan out into an oval shape.',
-      'You do not need to flatten these out too thin because we want them to have the thickness of a flatbread.',
-      'Heat a grill pan (or regular pan) over medium heat until hot.',
-      'Add your naan bread one at a time and let cook for 30-60 seconds per side. Exact time will vary based on how hot your pan is and how thick your naan bread is.',
-      'Continue for all 6 naan. I recommend cooking one at a time, that way you can easily assess when they are done.',
+      {
+        order: 1,
+        instruction:
+          'Add all your ingredients to a large bowl and mix it together until it forms a dough ball.',
+      },
+      {
+        order: 2,
+        instruction:
+          'Break the dough into 6 smaller pieces and lightly knead them in your hands to smooth out.',
+      },
+      {
+        order: 3,
+        instruction:
+          'Add to a floured surface and use your hands to flatten each naan out into an oval shape.',
+      },
+      {
+        order: 4,
+        instruction:
+          'You do not need to flatten these out too thin because we want them to have the thickness of a flatbread.',
+      },
+      { order: 5, instruction: 'Heat a grill pan (or regular pan) over medium heat until hot.' },
+      {
+        order: 6,
+        instruction:
+          'Add your naan bread one at a time and let cook for 30-60 seconds per side. Exact time will vary based on how hot your pan is and how thick your naan bread is.',
+      },
+      {
+        order: 7,
+        instruction:
+          'Continue for all 6 naan. I recommend cooking one at a time, that way you can easily assess when they are done.',
+      },
     ],
     ingredients: [
       { quantity: '150 g', name: 'Self Rising Flour' },
@@ -77,12 +109,17 @@ const recipesList: RecipeProps[] = [
     title: 'Chicken',
     category: {
       id: 1,
-      name: 'Dessert',
+      name: 'Entrees',
     },
     description: 'A simple sweet treat!',
     directions: [
-      'Throw in wet ingredients, followed by dry ingredients into a blender. Blend! This can be consumed immediately. Keeps in the fridge for up to 3 days in a seal tight container.',
+      {
+        order: 1,
+        instruction:
+          'Throw in wet ingredients, followed by dry ingredients into a blender. Blend! This can be consumed immediately. Keeps in the fridge for up to 3 days in a seal tight container.',
+      },
     ],
+
     ingredients: [
       { quantity: '1 1/2 cups', name: 'Fairlife Milk' },
       { quantity: '1/2 cup', name: 'Soymilk' },
@@ -102,6 +139,59 @@ const recipesList: RecipeProps[] = [
       calories: 380,
       fat: 0,
       protein: 48,
+    },
+  },
+  {
+    id: 4,
+    title: 'Sweet Potato Protein Muffin',
+    category: {
+      id: 4,
+      name: 'Dessert',
+    },
+    description: 'Moofins',
+    directions: [
+      {
+        order: 1,
+        instruction: 'Preheat oven to 375F. ',
+      },
+      {
+        order: 2,
+        instruction: 'Prepare a muffin tin with paper cups or silicone cups. ',
+      },
+      {
+        order: 3,
+        instruction:
+          "Combine all ingredients (mix by hand don't food process it or it will get too runny) ",
+      },
+      {
+        order: 4,
+        instruction:
+          'Divide mixture among 10-12 muffins. Bake for 20-25 minutes until toothpick inserted comes out clean.   ',
+      },
+      {
+        order: 5,
+        instruction: 'Let cool for 10 minutes.',
+      },
+    ],
+    ingredients: [
+      { quantity: '1 cup', name: 'mashed sweet potato' },
+      { quantity: '1/3 cup', name: 'butter or butter alternative' },
+      {
+        quantity: '2 rounded scoops',
+        name: 'Vanilla Protein Powder',
+      },
+      {
+        quantity: '3 tbsps',
+        name: 'All-purpose flour',
+      },
+      { quantity: '1/2 cup', name: 'Liquid Egg Whites' },
+    ],
+    imageUrl: './muffin.png',
+    nutrition: {
+      serving: 1,
+      calories: 94,
+      fat: 4,
+      protein: 6.7,
     },
   },
 ];

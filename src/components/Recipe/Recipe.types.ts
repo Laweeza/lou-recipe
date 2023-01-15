@@ -3,20 +3,25 @@ export interface IngredientProps {
   name: string;
 }
 
+export interface DirectionProps {
+  order: number;
+  instruction: string;
+}
+
 export interface RecipeProps {
   id: number;
   title: string;
   category?: ICategory;
   ingredients: IngredientProps[];
   description: string;
-  directions: string[];
+  directions: DirectionProps[];
   imageUrl?: string;
   nutrition?: INutrition;
 }
 
-export interface RecipeListProps {
-  recipes?: RecipeProps[];
-}
+// export interface RecipeListProps {
+//   recipes?: RecipeProps[];
+// }
 
 export interface ICategory {
   id: number;

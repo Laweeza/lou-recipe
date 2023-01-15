@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 
 import RecipeList from '../components/Recipe/RecipeList';
 import ErrorPage from '../pages/ErrorPage';
-import { Recipe } from '../pages/Recipes/Recipe';
+import RecipePage from '../pages/Recipes/Recipe';
 import recipesList from '../__fixtures__';
 
 const router = createBrowserRouter([
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/recipes/:id',
-        element: <Recipe />,
+        element: <RecipePage />,
       },
     ],
   },

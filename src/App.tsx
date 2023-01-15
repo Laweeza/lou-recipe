@@ -7,9 +7,7 @@ import router from './routes';
 export const App = () => {
   return (
     <ChakraProvider theme={theme}>
-      <Layout>
-        <RouterProvider router={router} />
-      </Layout>
+      <RouterProvider router={router} />
     </ChakraProvider>
   );
 };
