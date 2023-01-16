@@ -106,7 +106,7 @@ const recipesList: RecipeProps[] = [
   },
   {
     id: 3,
-    title: 'Chicken',
+    title: 'Protein Cinnamon Rolls',
     category: {
       id: 1,
       name: 'Dessert',
@@ -189,12 +189,13 @@ const recipesList: RecipeProps[] = [
         name: 'Light Butter',
       },
     ],
-    imageUrl: './chicken.png',
+    imageUrl: './cinnamon-roll.png',
     nutrition: {
-      serving: 524,
-      calories: 380,
-      fat: 0,
-      protein: 48,
+      serving: 530,
+      calories: 100,
+      fat: 1,
+      protein: 8,
+      carbs: 13.5,
     },
   },
   {
