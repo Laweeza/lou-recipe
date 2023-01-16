@@ -120,7 +120,7 @@ const recipesList: RecipeProps[] = [
       {
         order: 2,
         instruction:
-          'Fill up a large bowl or a pot with water and up water to 110 - 120 F (Sous vide or cooking thermometer).',
+          'Fill up a large bowl or a pot with water and heat up water to 110 - 120 F (Sous vide or cooking thermometer).',
       },
       {
         order: 3,
@@ -134,7 +134,7 @@ const recipesList: RecipeProps[] = [
       {
         order: 5,
         instruction:
-          'Preheat oven to 350. Prep a clean surface. Flour the surface, and knead the dough. Roll the dough out into a rectangle-ish shape (about 1/2 inch thick).',
+          'Preheat oven to 350F. Prep a clean surface, add flour to the surface, and knead the dough. Roll the dough out into a rectangle-ish shape (about 1/2 inch thick).',
       },
       {
         order: 6,
@@ -152,7 +152,7 @@ const recipesList: RecipeProps[] = [
       },
       {
         order: 9,
-        instruction: 'Cut the rolled up dough into 12 equal segments.',
+        instruction: 'Cut the rolled up dough into roughly 12 segments.',
       },
       {
         order: 10,
