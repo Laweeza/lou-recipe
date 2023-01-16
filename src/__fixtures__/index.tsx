@@ -109,29 +109,71 @@ const recipesList: RecipeProps[] = [
     title: 'Chicken',
     category: {
       id: 1,
-      name: 'Entrees',
+      name: 'Dessert',
     },
-    description: 'A simple sweet treat!',
+    description: 'Comparable to a less sweeter version of Cinnabon!',
     directions: [
       {
         order: 1,
+        instruction: 'Put yeast, flour, and protein powder in mixing bowl. Add honey if desired.',
+      },
+      {
+        order: 2,
         instruction:
-          'Throw in wet ingredients, followed by dry ingredients into a blender. Blend! This can be consumed immediately. Keeps in the fridge for up to 3 days in a seal tight container.',
+          'Fill up a large bowl or a pot with water and up water to 110 - 120 F (Sous vide or cooking thermometer).',
+      },
+      {
+        order: 3,
+        instruction:
+          'Put 1/2 cup of the water in the mixing bowl. While mixing, add 2-3 water or milk until the mix becomes a dough.',
+      },
+      {
+        order: 4,
+        instruction: 'Let the dough rest up to an hour. Cover with towel and set aside (timer).',
+      },
+      {
+        order: 5,
+        instruction:
+          'Preheat oven to 350. Prep a clean surface. Flour the surface, and knead the dough. Roll the dough out into a rectangle shape.',
+      },
+      {
+        order: 6,
+        instruction:
+          'Melt butter into a small dish in microwave. Mix sugar and cinnamon together in another small container.',
+      },
+      {
+        order: 7,
+        instruction: 'Cut dough into 6 pieces.',
       },
     ],
 
     ingredients: [
-      { quantity: '1 1/2 cups', name: 'Fairlife Milk' },
-      { quantity: '1/2 cup', name: 'Soymilk' },
+      { quantity: '200 g', name: 'Regular Unbleached Flour' },
+      { quantity: '10 g', name: 'Instant Yeast' },
       {
-        quantity: '1 rounded scoop',
-        name: 'PEScience Selection Protein - Gourmet Vanilla Whey+Casein Blend',
+        quantity: '2 rounded scoops (96 g)',
+        name: 'Vanilla Protein Powder - Whey+Casein Blend',
       },
       {
-        quantity: '1 packet',
-        name: 'Fat Free Pistachio Pudding - Can sub with vanilla, chocolate, etc',
+        quantity: '15 g',
+        name: 'Honey (Optional)',
       },
-      { quantity: '1/2 - 1/3 tsp', name: 'Guar Gum' },
+      {
+        quantity: '1/2 cup + 2-3 tbsps',
+        name: 'Water (110 F - 120 F). Tbsps may be water or milk if desired.',
+      },
+      {
+        quantity: '1 tbsp',
+        name: 'Ceylon cinnamon',
+      },
+      {
+        quantity: '2 tbsps',
+        name: 'Sweeter of choice (powdered erythritol, etc)',
+      },
+      {
+        quantity: '2 tbsps (28 g)',
+        name: 'Light Butter',
+      },
     ],
     imageUrl: './chicken.png',
     nutrition: {
