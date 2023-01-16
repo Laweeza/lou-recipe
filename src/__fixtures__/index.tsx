@@ -134,7 +134,7 @@ const recipesList: RecipeProps[] = [
       {
         order: 5,
         instruction:
-          'Preheat oven to 350. Prep a clean surface. Flour the surface, and knead the dough. Roll the dough out into a rectangle shape.',
+          'Preheat oven to 350. Prep a clean surface. Flour the surface, and knead the dough. Roll the dough out into a rectangle-ish shape (about 1/2 inch thick).',
       },
       {
         order: 6,
@@ -143,7 +143,21 @@ const recipesList: RecipeProps[] = [
       },
       {
         order: 7,
-        instruction: 'Cut dough into 6 pieces.',
+        instruction:
+          'Spread the butter on the dough, then sprinkle the sugar and cinnamon mix uniformly. Swirl into a wet paste with back of a spoon.',
+      },
+      {
+        order: 8,
+        instruction: 'Roll the dough longways up into a rope (hotdog style).',
+      },
+      {
+        order: 9,
+        instruction: 'Cut the rolled up dough into 12 equal segments.',
+      },
+      {
+        order: 10,
+        instruction:
+          'Spray aluminum foil on top of baking tray and place each segment. Bake for 11 minutes.',
       },
     ],
 
